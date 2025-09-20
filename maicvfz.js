@@ -134,11 +134,14 @@ function texctomn(){
 		//}
     
 //*7 >/v ccS}
-
+const	 tbv   =       document.getElementById("t5").value    .trim()  ;/*-fal pcigjsp ok **-+87 ***/   /*--97
+*-+7  984  *- **/
 function ttot() {
-	
+	console  .log(tbv);  //*7 fopaio  oskll  )
 }
      const move1= document.getElementById("move1")
+/*7faconst	 tbv   =       document.getElementById("t5").trim()  .value    ;/*-fal pcigjsp ok **-+87 ***/   /*--97
+ *///7
 const Mva= 20;
 
 let      x=  0;
@@ -150,27 +153,76 @@ document.addEventListener   ("keydown",  event   =>
 
 	if (event.key.startsWith("Arrow")) {
 		switch(event.key){
-			case  "Arrowup"  :
+			case  "ArrowUp"  :
 
 
 			y-=Mva
+			 console.log("? /")
+			      //*7 ?“”‘°/-7/tbv.setAttribute(y)
 			break;
 
 
-			case  "Arrowdown"  :
-			y+=Mva
+			case  "ArrowDown"  :
+			y+=Mva;    console.log("? /")
 			break;
 
 
 
-			  case  "Arrowup"        :
+			  case  "ArrowLeft"        :
 			x-=Mva
+
+
+
+
+			console.log("? /")
 			break;
 
 
-			case  "Arrowdown"  :
-			x  +=Mva
+			case  "ArrowRight"  :
+			x  +=Mva;   /**7 **/// */
+			      console.log("? /")
 			break;
+
+
+
+			case  "ArrowUp" &&   "ArrowRight":
+
+			x  +=Mva;   /**7 **/// */
+			y-=Mva
+			 console.log(    "? /")
+			      //*7 ?“”‘°/-7/tbv.setAttribute(y)
+			break;
+
+
+			case  "ArrowDown"  &&   "ArrowRight"     :
+			y+=Mva;    console.log("? /")
+
+
+			x    +=     Mva;
+			break      ;
+
+
+
+			  case  "ArrowDown"  &&  "ArrowLeft"        :
+			x-=Mva;    x    -=     Mva;//   ;  //*/-7\' ???
+
+
+
+
+			console.log("? /")
+			break;
+
+
+			case  "ArrowDown"  &&   "ArrowRight"    :
+			x  +=Mva;   /**7 **///     /
+			      console.log("? /");     y+=Mva;    console.log("? /")
+
+			break;
+
+
+			// altd*-/*------98
+
+			default: window.alert(1)
 		}
 
 		move1.style.top=  `${y}px`;/*---*//*7 ?‘/f*a7 7894 **/   move1.style.left=  `${x}px`
